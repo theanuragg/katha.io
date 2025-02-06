@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",  // output to the dist folder
+    "declaration": true,  // generate .d.ts files
+    "skipLibCheck": true,  // optional: to skip checking .d.ts files from node_modules
+    "noEmitOnError": true,  // optional: ensures no output if there are errors
+    "rootDir": "./src"  // specify the root directory for input files
+  },
+  "include": ["src/**/*"],  // include the source files from the 'src' folder
+  "exclude": ["node_modules", "dist"]  // exclude the 'dist' folder from input files
+}
