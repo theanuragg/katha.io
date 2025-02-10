@@ -28,8 +28,8 @@ userRouter.post("/signup", async (c) => {
       },
     });
     
-    const prettyJSON =  await sign({user: user.id }, c.env.JWT_SECRET);
-    return c.json({ prettyJSON });
+    const json =  await sign({user: user.id }, c.env.JWT_SECRET);
+    return c.json({ json });
   } catch (e) {
     console.log(e);
     c.status(403);
@@ -58,8 +58,8 @@ userRouter.post("/signin", async (c) => {
       });
     }
 
-    const prettyJSON =  await sign({user: user.id }, c.env.JWT_SECRET);
-    return c.json({ prettyJSON });
+    const json =  await sign({user: user.id }, c.env.JWT_SECRET);
+    return c.json({ json });
   } catch (e) {
     c.status(401);
     console.log(e);
