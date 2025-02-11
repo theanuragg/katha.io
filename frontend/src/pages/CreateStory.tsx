@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import Tiptapeditor from "../components/EditorComponents";
+
 import EditorComponent from "../components/EditorComponents";
 
 // Reusable Input Component
-const Input: React.FC<{ placeholder: string; className?: string }> = ({ placeholder, className }) => (
-  <input type="text" placeholder={placeholder} className={`border border-gray-300 rounded-md p-2 ${className}`} />
-);
 
 // Reusable Button Component
 const Button: React.FC<{ label: string; onClick?: () => void; className?: string }> = ({ label, onClick, className }) => (
@@ -25,15 +22,9 @@ const CreateStory: React.FC = () => {
   };
 
   return (
-    <div className="bg-peach-200 p-6 rounded-md shadow-md max-w-lg mx-auto">
+    <div className="bg-facey p-6  rounded-md shadow-md max-w-lg mx-auto">
       {/* Search Section */}
-      <div className="flex justify-between items-center mb-4">
-        <Input placeholder="Search..." className="w-1/2" />
-        <div className="flex gap-2">
-          <div className="w-6 h-6 bg-gray-300 rounded-full" />
-          <div className="w-6 h-6 bg-gray-300 rounded-full" />
-        </div>
-      </div>
+      
 
       {/* Title Input */}
       <input
