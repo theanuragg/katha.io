@@ -16,7 +16,6 @@ const Button: React.FC<ButtonProps> = ({ active, onMouseDown, children }) => {
         margin: "2px",
         borderRadius: "5px",
         border: "1px solid gray",
-        background: active ? "#ddd" : "white",
         cursor: "pointer",
       }}
     >

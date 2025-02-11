@@ -8,9 +8,7 @@ const Layout: React.FC = () => {
     <div className="min-h-screen">
       {/* Header */}
       <Header />
-
-      {/* Dynamic Content */}
-      <main className="container mx-auto p-4">
+      <main>
         <Outlet />
       </main>
     </div>
