@@ -1,13 +1,39 @@
 import CaseStudies from "../components/CaseStudies";
 import FooterCtx from "../components/FooterCtx";
+import { useNavigate } from "react-router-dom";
 import { AvatarGroup } from "./../components/AvatarGroup";
 
 const Index = () => {
+  const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-gradient-to-br bg-orange-300 relative overflow-hidden">
-      <div className="pt-4 pl-4 text-5xl capitalize italic text-orange">
-      कatha
+    <div className="min-h-screen bg-gradient-to-br bg-bg relative overflow-hidden">
+      <div className="flex justify-between items-center px-4 py-4">
+        {/* Left Side */}
+        <div
+          onClick={() => {
+            navigate("/");
+          }}
+          className="hover:cursor-pointer capitalize italic text-orange flex items-center"
+        >
+          <img
+            className="rounded-lg"
+            src="/katha.png"
+            alt="logo"
+            style={{ width: "30px", height: "30px" }}
+          />
+        </div>
+
+        {/* Right Side */}
+        <div
+          onClick={() => {
+            navigate("/signup");
+          }}
+          className="text-xl hover:cursor-pointer  hover:text-slate-950 font-sans text-gray-600"
+        >
+          Have an account?
+        </div>
       </div>
+
       <div className="flex flex-col lg:flex-row ">
         {/* Left content */}
         <div className="flex-1 text-left pt-24 pl-16 space-y-8 py-20 gap-44">
@@ -44,7 +70,7 @@ const Index = () => {
         <FooterCtx />
       </div>
       <div className="mt-72 text-5xl text-orange-500 text-center flex justify-center">
-         working on it 
+        working on it
       </div>
     </div>
   );

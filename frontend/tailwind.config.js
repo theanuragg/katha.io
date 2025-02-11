@@ -9,7 +9,8 @@ module.exports = {
       colors:{
         'orange': '#BD5631',
         'facey':'#FEE9D5',
-        'button':'#F97316'
+        'button':'#F97316',
+        'bg' :'orange-300'
       }
     },
   },
