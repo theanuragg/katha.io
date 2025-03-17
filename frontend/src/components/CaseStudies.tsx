@@ -54,10 +54,10 @@ const CaseStudies = () => {
       <h2 className="text-3xl font-bold text-center mb-4">
         See exactly how an Tech product goes from zero to millions:
       </h2>
-      <div className="grid md:grid-cols-2 gap-6 mt-8">
+      <div className="grid md:grid-cols-2 gap-6 mt-8 ">
         {caseStudies.map((study, index) => (
-          <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-            <CardContent className="p-0">
+          <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow  hover:scale-105">
+            <CardContent className="p-0 ">
               <div className="flex gap-4 p-4">
                 <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                   <img

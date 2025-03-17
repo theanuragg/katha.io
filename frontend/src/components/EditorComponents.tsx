@@ -98,7 +98,7 @@ const toggleBlock = (event: React.MouseEvent, editor: ReactEditor, format: strin
 
 const handleKeyDown = (event: React.KeyboardEvent, editor: ReactEditor) => {
   if (event.ctrlKey) {
-    switch (event.key) {
+  switch (event.key) {
       case "b":
         event.preventDefault();
         toggleMark(event as unknown as React.MouseEvent, editor, "bold");
