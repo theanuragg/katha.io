@@ -22,8 +22,8 @@ const Button: React.FC<{
 // Main Component
 const CreateStory: React.FC = () => {
   const [title, setTitle] = useState("");
-  const [content, setContent] = useState(
-    "<p>Start writing your content here...</p>"
+  const [content, ] = useState(
+   ""
   );
 
   const handlePost = () => {

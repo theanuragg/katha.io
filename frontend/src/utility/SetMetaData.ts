@@ -4,7 +4,7 @@ export const setMetaTags = (
     imageUrl: string,
     url: string
   ) => {
-    document.title = title; // Update the page title
+    document.title = title; 
   
     const setMetaTag = (property: string, content: string) => {
       let tag = document.querySelector(`meta[property='${property}']`);
